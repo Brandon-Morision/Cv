@@ -1,0 +1,58 @@
+body {
+    background-color: #eaf6f6;
+  }
+ 
+ h1 {
+    color: #060047;    
+  }
+  h2{
+    color: #66BFBF;
+  }
+  h3{
+    color: #66BFBF;
+  }
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+  }
+  img {
+    background-color: non;
+  }nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .head {
+    flex: 1;
+    
+    background-color: #333;
+    color: #66BFBF;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+  .head:hover,
+  .head:focus {
+    background-color: #fff;
+    color: #333;
+  }
+  /* Add media query */
+  @media only screen and (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+    td {
+      display: block;
+      width: 100%;
+    }
+    img {
+      width: 50%;
+      
+    }
+  }
