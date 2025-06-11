@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Brandon Morris - Software Engineer and Web Developer">
+    <title>Contact - Brandon Morris</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-page {
+            padding: 12rem 10% 2rem;
+            min-height: 100vh;
+        }
+
+        .contact-container {
+            max-width: 80rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 4rem;
+        }
+
+        .contact-info {
+            background: #2a2f3a;
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 2rem rgba(14, 255, 255, 0.1);
+        }
+
+        .contact-info h2 {
+            color: #0ef;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-info p {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #0ef;
+        }
+
+        .contact-form {
+            background: #2a2f3a;
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 2rem rgba(14, 255, 255, 0.1);
+        }
+
+        .contact-form h2 {
+            color: #0ef;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1.2rem;
+            background: #1f242d;
+            border: 2px solid #0ef;
+            border-radius: 0.8rem;
+            color: #fff;
+            font-size: 1.6rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            box-shadow: 0 0 1rem #0ef;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 15rem;
+        }
+
+        .submit-btn {
+            background: #0ef;
+            color: #1f242d;
+            padding: 1.2rem 2.8rem;
+            border: none;
+            border-radius: 4rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            box-shadow: 0 0 2rem #0ef;
+            transform: translateY(-2px);
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: #0ef;
+            color: #1f242d;
+            padding: 1rem 2rem;
+            border-radius: 4rem;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+            box-shadow: 0 0 2rem #0ef;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .contact-page {
+                padding: 10rem 4% 2rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .back-btn {
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <a href="index.html" class="back-btn">
+        <i class='bx bx-arrow-back'></i> Back to Home
+    </a>
+
+    <section class="contact-page">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2><i class='bx bxs-contact'></i> Contact Information</h2>
+                <p><i class='bx bxs-phone'></i> <a href="tel:+254759383044">+254 759 383 044</a></p>
+                <p><i class='bx bxs-phone'></i> <a href="tel:+254751251865">+254 751 251 865</a></p>
+                <p><i class='bx bxs-envelope'></i> <a href="mailto:brandonmorision@gmail.com">brandonmorision@gmail.com</a></p>
+                <p><i class='bx bxs-map'></i> Nairobi, Kenya</p>
+                
+                <div class="social-links">
+                    <h2><i class='bx bxs-share-alt'></i> Social Media</h2>
+                    <p>
+                        <a href="#" target="_blank"><i class='bx bxl-facebook'></i> Facebook</a>
+                    </p>
+                    <p>
+                        <a href="#" target="_blank"><i class='bx bxl-twitter'></i> Twitter</a>
+                    </p>
+                    <p>
+                        <a href="#" target="_blank"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                    </p>
+                    <p>
+                        <a href="#" target="_blank"><i class='bx bxl-instagram'></i> Instagram</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2><i class='bx bxs-message-dots'></i> Send Message</h2>
+                <form id="contactForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class='bx bx-send'></i> Send Message
+                    </button>
+                    <p id="form-status" style="margin-top: 1.5rem; font-size: 1.6rem; text-align: center; color: #0ef;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Form validation and submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formStatus = document.getElementById('form-status');
+
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !subject || !message) {
+                formStatus.textContent = 'Please fill in all fields.';
+                formStatus.style.color = '#ff6b6b';
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                formStatus.textContent = 'Please enter a valid email address.';
+                formStatus.style.color = '#ff6b6b';
+                return;
+            }
+
+            // Simulate successful submission and inform user about backend requirement
+            formStatus.textContent = 'Form submitted! To actually send emails, a server-side script is required (e.g., PHP, Node.js, Python). Please set this up.';
+            formStatus.style.color = '#0ef';
+            this.reset(); // Clear the form
+        });
+
+        // Loading animation
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader-wrapper');
+            if (loader) {
+                loader.classList.add('fade-out');
+                setTimeout(() => {
+                    loader.remove();
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>

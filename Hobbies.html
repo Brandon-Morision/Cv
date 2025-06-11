@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brandon Morris - Hobbies and Interests">
+    <title>Hobbies - Brandon Morris</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hobbies-page {
+            padding: 12rem 10% 2rem;
+            min-height: 100vh;
+        }
+
+        .hobbies-container {
+            max-width: 80rem;
+            margin: 0 auto;
+        }
+
+        .timeline-section {
+            margin-bottom: 6rem;
+        }
+
+        .timeline-section h2 {
+            color: #0ef;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: #0ef;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            padding: 1rem 4rem;
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 0.5s ease;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            transform: translateX(100px);
+        }
+
+        .timeline-item:nth-child(even).visible {
+            transform: translateX(0);
+        }
+
+        .timeline-content {
+            padding: 2rem;
+            background: #2a2f3a;
+            border-radius: 1rem;
+            box-shadow: 0 0 2rem rgba(14, 255, 255, 0.1);
+        }
+
+        .timeline-content h3 {
+            color: #0ef;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-content p {
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            background: #0ef;
+            border-radius: 50%;
+            top: 2rem;
+            right: -1rem;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -1rem;
+        }
+
+        .hobbies-section {
+            margin-bottom: 6rem;
+        }
+
+        .hobbies-section h2 {
+            color: #0ef;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            gap: 2rem;
+        }
+
+        .hobby-card {
+            background: #2a2f3a;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 2rem rgba(14, 255, 255, 0.2);
+        }
+
+        .hobby-card i {
+            font-size: 4rem;
+            color: #0ef;
+            margin-bottom: 1.5rem;
+        }
+
+        .hobby-card h3 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .hobby-card p {
+            font-size: 1.4rem;
+            color: #ccc;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: #0ef;
+            color: #1f242d;
+            padding: 1rem 2rem;
+            border-radius: 4rem;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+            box-shadow: 0 0 2rem #0ef;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .hobbies-page {
+                padding: 10rem 4% 2rem;
+            }
+
+            .timeline::after {
+                left: 3rem;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 7rem;
+                padding-right: 2rem;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-item::after {
+                left: 2rem;
+            }
+
+            .timeline-item:nth-child(even)::after {
+                left: 2rem;
+            }
+
+            .back-btn {
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <a href="index.html" class="back-btn">
+        <i class='bx bx-arrow-back'></i> Back to Home
+    </a>
+
+    <section class="hobbies-page">
+        <div class="hobbies-container">
+            <div class="timeline-section">
+                <h2><i class='bx bx-time'></i> Programming Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2017</h3>
+                            <p>Completed my first programming language course, marking the beginning of my journey in software development.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2019</h3>
+                            <p>Successfully completed my second programming language course, expanding my technical knowledge and skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hobbies-section">
+                <h2><i class='bx bx-heart'></i> My Hobbies</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Programming</h3>
+                        <p>Passionate about coding and creating innovative solutions</p>
+                    </div>
+                    <div class="hobby-card">
+                        <i class='bx bx-book-reader'></i>
+                        <h3>Reading</h3>
+                        <p>Exploring new ideas and expanding knowledge through books</p>
+                    </div>
+                    <div class="hobby-card">
+                        <i class='bx bx-music'></i>
+                        <h3>Drumming</h3>
+                        <p>Expressing creativity through rhythm and music</p>
+                    </div>
+                    <div class="hobby-card">
+                        <i class='bx bx-palette'></i>
+                        <h3>Drawing</h3>
+                        <p>Visualizing ideas and expressing creativity through art</p>
+                    </div>
+                    <div class="hobby-card">
+                        <i class='bx bx-microphone'></i>
+                        <h3>Singing</h3>
+                        <p>Sharing emotions and stories through vocal expression</p>
+                    </div>
+                    <div class="hobby-card">
+                        <i class='bx bx-dance'></i>
+                        <h3>Dancing</h3>
+                        <p>Moving to the rhythm and expressing joy through dance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Loading animation
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader-wrapper');
+            if (loader) {
+                loader.classList.add('fade-out');
+                setTimeout(() => {
+                    loader.remove();
+                }, 500);
+            }
+        });
+
+        // Timeline animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Hobby cards hover effect
+        document.querySelectorAll('.hobby-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
