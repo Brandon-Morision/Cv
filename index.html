@@ -36,14 +36,15 @@
             <a href="#education" style="--i:3;">Education</a>
             <a href="#skills" style="--i:4;">Skills</a>
             <a href="#projects" style="--i:5;">Projects</a>
-            <a href="#contact" style="--i:6;">Contact</a>
+            <a href="#testimonials" style="--i:6;">Testimonials</a>
+            <a href="#contact" style="--i:7;">Contact</a>
         </nav>
         <div class="menu-btn">
             <i class='bx bx-menu'></i>
         </div>
     </header>
 
-    <section id="home" class="home">
+    <section id="home" class="home section-hidden">
         <div class="home-content">
             <h3>Hi, my name is</h3>
             <h1>Brandon Morris</h1>
@@ -55,27 +56,29 @@
                 <a href="#" aria-label="Instagram" style="--i:9;"><i class='bx bxl-instagram-alt'></i></a>
                 <a href="#" aria-label="LinkedIn" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="https://1drv.ms/b/s!Av05o-e48EfVgbYA1Ldrr_XBdBYXQA?e=QIjVd8" class="btn">Download CV</a>
+            <a href="working on it.html" class="btn">Download CV</a>
         </div>
         <div class="home-image">
             <img src="home.png" alt="Brandon Morris" loading="lazy">
+            <!-- Placeholder for custom home section illustration -->
+            <div class="home-illustration-placeholder"></div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about section-hidden">
         <div class="about-content">
             <div class="about-image">
                 <img src="2Brandon.png" alt="Brandon Morris profile" loading="lazy">
             </div>
             <div class="about-text">
-                <h2>About Me</h2>
+                <h2>About Me <span class="about-icon-placeholder"></span></h2>
                 <p><em>Future Co-founder and Co CEO of <strong><a href="https://1drv.ms/u/s!Av05o-e48EfV0EFfnjaPznYHF_pZ">Zashcon</a></strong></em></p>
                 <p>I have a great passion for software development and desire to own and run a software engineering company together with my co-partner <strong>Ariel Zuriel.</strong></p>
             </div>
         </div>
     </section>
 
-    <section id="education" class="education">
+    <section id="education" class="education section-hidden">
         <h2>Education</h2>
         <div class="education-timeline">
             <div class="education-item">
@@ -105,66 +108,93 @@
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills section-hidden">
         <h2>Skills</h2>
         <div class="skills-grid">
             <div class="skill-item">
+                <i class='bx bxl-python skill-icon-placeholder'></i>
                 <h3>Python</h3>
-                <div class="skill-level">
+                <div class="skill-level" data-level="75">
                     <div class="skill-progress" style="width: 75%"></div>
                 </div>
             </div>
             <div class="skill-item">
+                <i class='bx bxl-java skill-icon-placeholder'></i>
                 <h3>Java</h3>
-                <div class="skill-level">
+                <div class="skill-level" data-level="75">
                     <div class="skill-progress" style="width: 75%"></div>
                 </div>
             </div>
             <div class="skill-item">
+                <i class='bx bxl-c-plus-plus skill-icon-placeholder'></i>
                 <h3>C++</h3>
-                <div class="skill-level">
+                <div class="skill-level" data-level="50">
                     <div class="skill-progress" style="width: 50%"></div>
                 </div>
             </div>
             <div class="skill-item">
+                <i class='bx bxl-c-plus-plus skill-icon-placeholder'></i> <!-- Placeholder for C icon, using c-plus-plus for now -->
                 <h3>C</h3>
-                <div class="skill-level">
+                <div class="skill-level" data-level="50">
                     <div class="skill-progress" style="width: 50%"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects section-hidden">
         <h2>My Latest Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <img src="contact.png" alt="Project 1">
-                <h3>Project Title One</h3>
-                <p>A brief description of project one. This could be a web application, a software tool, or any relevant work.</p>
+                <h3>Project Title One Coming Soon</h3>
+                <p>A brief description of project one Coming Soon. This could be a web application, a software tool, or any relevant work.</p>
                 <a href="#" class="btn">View Project</a>
             </div>
             <div class="project-card">
                 <img src="contact.png" alt="Project 2">
-                <h3>Project Title Two</h3>
-                <p>A brief description of project two. Highlight key features or technologies used here.</p>
+                <h3>Project Title Two Coming Soon</h3>
+                <p>A brief description of project two Coming Soon. Highlighting key features or technologies used here.</p>
                 <a href="#" class="btn">View Project</a>
             </div>
             <div class="project-card">
                 <img src="contact.png" alt="Project 3">
-                <h3>Project Title Three</h3>
-                <p>A brief description of project three. Explain what makes this project stand out.</p>
+                <h3>Project Title Three Coming Soon</h3>
+                <p>A brief description of project three Coming Soon. Explaining what makes this project stand out.</p>
                 <a href="#" class="btn">View Project</a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="testimonials" class="testimonials section-hidden">
+        <h2>What People Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Brandon is a highly skilled and dedicated developer. He delivered exceptional results on our project!"</p>
+                <h3>- Client Name One</h3>
+                <span>Web Development Client</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"His problem-solving abilities are outstanding. It was a pleasure working with Brandon on challenging tasks."</p>
+                <h3>- Colleague Name Two</h3>
+                <span>Software Engineer</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Brandon is always eager to learn and adapt to new technologies. A true asset to any team."</p>
+                <h3>- Mentor Name Three</h3>
+                <span>Industry Expert</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section-hidden">
         <h2>Contact Me</h2>
         <div class="contact-content">
             <a href="My contacts.html" class="btn">Get in Touch</a>
             <a href="Hobbies.html" class="btn">My Hobbies</a>
         </div>
+        <!-- Placeholder for custom contact section illustration -->
+        <div class="contact-illustration-placeholder"></div>
     </section>
 
     <footer class="footer">

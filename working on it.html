@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Website under maintenance.">
+  <title>We're Working On It!</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .maintenance-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .maintenance-content {
+      max-width: 60rem;
+      background: #2a2f3a;
+      padding: 4rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 2rem rgba(14, 255, 255, 0.1);
+    }
+
+    .maintenance-content h1 {
+      font-size: 4rem;
+      color: #0ef;
+      margin-bottom: 2rem;
+    }
+
+    .maintenance-content p {
+      font-size: 1.8rem;
+      color: #ccc;
+      margin-bottom: 3rem;
+    }
+
+    .maintenance-content p br {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .back-btn {
+        position: fixed;
+        top: 2rem;
+        left: 2rem;
+        background: #0ef;
+        color: #1f242d;
+        padding: 1rem 2rem;
+        border-radius: 4rem;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
+
+    .back-btn:hover {
+        box-shadow: 0 0 2rem #0ef;
+        transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 1.4rem;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .maintenance-content h1 {
+        font-size: 3rem;
+      }
+      .maintenance-content {
+        padding: 3rem;
+      }
+      .back-btn {
+          top: 1rem;
+          left: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loader-wrapper">
+      <div class="loader"></div>
+  </div>
+
+  <a href="index.html" class="back-btn">
+      <i class='bx bx-arrow-back'></i> Back to Home
+  </a>
+
+  <section class="maintenance-page">
+    <div class="maintenance-content">
+      <i class='bx bx-wrench' style="font-size: 8rem; color: #0ef; margin-bottom: 2rem;"></i>
+      <h1>I'm Working On It!</h1>
+      <p>The website is currently undergoing maintenance. <br/> Please check back shortly. Thanks for your patience!</p>
+      <footer>&copy; 2024 Zashcon. All rights reserved.</footer>
+    </div>
+  </section>
+
+  <script>
+    // Loading animation
+    window.addEventListener('load', () => {
+        const loader = document.querySelector('.loader-wrapper');
+        if (loader) {
+            loader.classList.add('fade-out');
+            setTimeout(() => {
+                loader.remove();
+            }, 500);
+        }
+    });
+  </script>
+</body>
+</html>

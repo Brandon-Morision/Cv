@@ -64,6 +64,28 @@ const animateSkills = () => {
 window.addEventListener('scroll', animateSkills);
 window.addEventListener('load', animateSkills);
 
+// Section fade-in-on-scroll animation
+const sections = document.querySelectorAll('section');
+
+const revealSection = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('section-visible');
+            entry.target.classList.remove('section-hidden');
+            observer.unobserve(entry.target);
+        }
+    });
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+    root: null, // viewport
+    threshold: 0.15, // 15% of the section must be visible to trigger
+});
+
+sections.forEach(section => {
+    sectionObserver.observe(section);
+});
+
 // Loading animation
 window.addEventListener('load', () => {
     const loader = document.querySelector('.loader-wrapper');
