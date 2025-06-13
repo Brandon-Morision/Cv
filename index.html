@@ -4,23 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brandon Morris - Software Engineer and Web Developer Portfolio showcasing skills in Python, Java, C++, and web development">
-    <meta name="keywords" content="Brandon Morris, Software Engineer, Web Developer, Portfolio, Python, Java, C++, Web Development">
+    
+    <!-- Primary Meta Tags -->
+    <title>Brandon Morris - Software Engineer & Web Developer Portfolio</title>
+    <meta name="title" content="Brandon Morris - Software Engineer & Web Developer Portfolio">
+    <meta name="description" content="Professional portfolio of Brandon Morris, a Software Engineer and Web Developer specializing in Python, Java, C++, and web development. View projects, skills, and experience.">
+    <meta name="keywords" content="Brandon Morris, Software Engineer, Web Developer, Portfolio, Python, Java, C++, Web Development, Full Stack Developer, Kenya">
     <meta name="author" content="Brandon Morris">
-    <meta property="og:title" content="Brandon Morris - Portfolio">
-    <meta property="og:description" content="Software Engineer and Web Developer Portfolio">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="generator" content="Custom Portfolio">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <title>Brandon Morris - Portfolio</title>
+    <meta property="og:url" content="https://brandon-morision.github.io/Cv/">
+    <meta property="og:title" content="Brandon Morris - Software Engineer & Web Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio of Brandon Morris, a Software Engineer and Web Developer specializing in Python, Java, C++, and web development.">
+    <meta property="og:image" content="https://brandon-morision.github.io/Cv/assets/2Brandon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://brandon-morision.github.io/Cv/">
+    <meta property="twitter:title" content="Brandon Morris - Software Engineer & Web Developer Portfolio">
+    <meta property="twitter:description" content="Professional portfolio of Brandon Morris, a Software Engineer and Web Developer specializing in Python, Java, C++, and web development.">
+    <meta property="twitter:image" content="https://brandon-morision.github.io/Cv/assets/2Brandon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/home.png" as="image">
+    <link rel="preload" href="assets/2Brandon.png" as="image">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style">
+    <link rel="preload" href="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" as="script">
+
+    <!-- Stylesheets -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
-    <!-- Preload critical assets -->
-    <link rel="preload" href="home.png" as="image">
-    <link rel="preload" href="2Brandon.png" as="image">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Brandon Morris",
+        "url": "https://brandon-morision.github.io/Cv/",
+        "image": "https://brandon-morision.github.io/Cv/assets/2Brandon.png",
+        "sameAs": [
+            "https://linkedin.com/in/your-profile",
+            "https://github.com/Brandon-Morision",
+            "https://twitter.com/your-profile"
+        ],
+        "jobTitle": "Software Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Zashcon"
+        },
+        "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "JOMO KENYATTA UNIVERSITY OF AGRICULTURE AND TECHNOLOGY",
+                "url": "https://www.jkuat.ac.ke/"
+            }
+        ],
+        "knowsAbout": ["Python", "Java", "C++", "Web Development", "Software Engineering"]
+    }
+    </script>
 </head>
 <body>
     <!-- Loading Animation -->
@@ -28,21 +83,35 @@
         <div class="loader"></div>
     </div>
 
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
         <nav class="navbar">
-            <a href="#home" style="--i:1;" class="active">Home</a>
-            <a href="#about" style="--i:2;">About</a>
-            <a href="#education" style="--i:3;">Education</a>
-            <a href="#skills" style="--i:4;">Skills</a>
-            <a href="#projects" style="--i:5;">Projects</a>
-            <a href="#testimonials" style="--i:6;">Testimonials</a>
-            <a href="#contact" style="--i:7;">Contact</a>
+            <a href="#home" style="--i:1;" class="active" aria-label="Home section">Home</a>
+            <a href="#about" style="--i:2;" aria-label="About section">About</a>
+            <a href="#education" style="--i:3;" aria-label="Education section">Education</a>
+            <a href="#skills" style="--i:4;" aria-label="Skills section">Skills</a>
+            <a href="#projects" style="--i:5;" aria-label="Projects section">Projects</a>
+            <a href="#testimonials" style="--i:6;" aria-label="Testimonials section">Testimonials</a>
+            <a href="#contact" style="--i:7;" aria-label="Contact section">Contact</a>
         </nav>
-        <div class="menu-btn">
+        <div class="menu-btn" aria-label="Toggle navigation menu">
             <i class='bx bx-menu'></i>
         </div>
     </header>
+
+    <!-- Section Indicator -->
+    <div class="section-indicator">
+        <div class="section-dot active" data-section="home" aria-label="Go to Home section"></div>
+        <div class="section-dot" data-section="about" aria-label="Go to About section"></div>
+        <div class="section-dot" data-section="education" aria-label="Go to Education section"></div>
+        <div class="section-dot" data-section="skills" aria-label="Go to Skills section"></div>
+        <div class="section-dot" data-section="projects" aria-label="Go to Projects section"></div>
+        <div class="section-dot" data-section="testimonials" aria-label="Go to Testimonials section"></div>
+        <div class="section-dot" data-section="contact" aria-label="Go to Contact section"></div>
+    </div>
 
     <section id="home" class="home section-hidden">
         <div class="home-content">
@@ -56,10 +125,10 @@
                 <a href="#" aria-label="Instagram" style="--i:9;"><i class='bx bxl-instagram-alt'></i></a>
                 <a href="#" aria-label="LinkedIn" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="working on it.html" class="btn">Download CV</a>
+            <a href="pages/working on it.html" class="btn">Download CV</a>
         </div>
         <div class="home-image">
-            <img src="home.png" alt="Brandon Morris" loading="lazy">
+            <img src="assets/optimized/home.webp" alt="Brandon Morris" loading="lazy">
             <!-- Placeholder for custom home section illustration -->
             <div class="home-illustration-placeholder"></div>
         </div>
@@ -68,7 +137,7 @@
     <section id="about" class="about section-hidden">
         <div class="about-content">
             <div class="about-image">
-                <img src="2Brandon.png" alt="Brandon Morris profile" loading="lazy">
+                <img src="assets/optimized/2Brandon.webp" alt="Brandon Morris profile" loading="lazy">
             </div>
             <div class="about-text">
                 <h2>About Me <span class="about-icon-placeholder"></span></h2>
@@ -146,19 +215,19 @@
         <h2>My Latest Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <img src="contact.png" alt="Project 1">
+                <img src="assets/optimized/contact.webp" alt="Project 1">
                 <h3>Project Title One Coming Soon</h3>
                 <p>A brief description of project one Coming Soon. This could be a web application, a software tool, or any relevant work.</p>
                 <a href="#" class="btn">View Project</a>
             </div>
             <div class="project-card">
-                <img src="contact.png" alt="Project 2">
+                <img src="assets/optimized/contact.webp" alt="Project 2">
                 <h3>Project Title Two Coming Soon</h3>
                 <p>A brief description of project two Coming Soon. Highlighting key features or technologies used here.</p>
                 <a href="#" class="btn">View Project</a>
             </div>
             <div class="project-card">
-                <img src="contact.png" alt="Project 3">
+                <img src="assets/optimized/contact.webp" alt="Project 3">
                 <h3>Project Title Three Coming Soon</h3>
                 <p>A brief description of project three Coming Soon. Explaining what makes this project stand out.</p>
                 <a href="#" class="btn">View Project</a>
@@ -190,8 +259,8 @@
     <section id="contact" class="contact section-hidden">
         <h2>Contact Me</h2>
         <div class="contact-content">
-            <a href="My contacts.html" class="btn">Get in Touch</a>
-            <a href="Hobbies.html" class="btn">My Hobbies</a>
+            <a href="pages/My contacts.html" class="btn">Get in Touch</a>
+            <a href="pages/Hobbies.html" class="btn">My Hobbies</a>
         </div>
         <!-- Placeholder for custom contact section illustration -->
         <div class="contact-illustration-placeholder"></div>
@@ -202,6 +271,6 @@
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
