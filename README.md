@@ -117,8 +117,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Brandon Morris
 - GitHub: [@Brandon-Morision](https://github.com/Brandon-Morision)
-- LinkedIn: [Your LinkedIn Profile]
-- Twitter: [Your Twitter Profile]
+- LinkedIn: (www.linkedin.com/in/morris-brandon-93a73b262)
+
 
 ## 🙏 Acknowledgments
 
